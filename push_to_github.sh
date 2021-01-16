@@ -1,3 +1,3 @@
 git add .
-git commit -m "cli building in progress"
+git commit -m "cli Initialize Cobra projects"
 git push origin master -f
