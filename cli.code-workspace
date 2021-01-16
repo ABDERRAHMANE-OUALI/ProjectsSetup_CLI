@@ -1,0 +1,13 @@
+{
+  "folders": [
+    {
+      // Source code
+      "name": "PCli",
+      "path": "/home/andruxuis/Documents/Go/ProjectsSetup_CLI"
+    }
+  ],
+  "settings": {
+    "editor.formatOnSave": true,
+    "go.autocompleteUnimportedPackages": true
+  },
+}
