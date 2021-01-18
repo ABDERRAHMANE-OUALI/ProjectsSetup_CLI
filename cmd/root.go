@@ -41,7 +41,7 @@ func promptUI()  {
 
 	prompt := promptui.Select{
 		Label: "Select A Project setup",
-		Items: []string{"React-Typescript", "ReactNative-Expo-Typescript"},
+		Items: []string{"React-Typescript", "ReactNative-Expo-Typescript", "Firebase Functions"},
 		Templates: cellTemplate,	
 	}
 
