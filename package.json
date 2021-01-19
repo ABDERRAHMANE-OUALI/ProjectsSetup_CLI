@@ -1,5 +1,5 @@
 {
-  "name": "psetup",
+  "name": "p-setup",
   "version": "1.0.0",
   "description": "A Cli for Setup Projects for React web and mobile native ",
   "main": "main.go",
