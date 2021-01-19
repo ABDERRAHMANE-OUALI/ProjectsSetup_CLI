@@ -1,4 +1,4 @@
-name: Firebase Continuous Deployment
+name: Build cli and Deploy to npm
 
 on:
   push:
@@ -18,7 +18,7 @@ jobs:
 
   - name: Build Go Programme
     run: go build -v
-  
+
   - name: Publish to npm
     steps:
       - uses: actions/checkout@v1
