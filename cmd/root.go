@@ -13,20 +13,22 @@ import (
 	"github.com/fatih/color"
 )
 
-func cliInputs() string  {
-	prompt := promptui.Prompt{
-		Label:    "Project Name",
-	}
+// Function for get inputs from terminal
 
-	result, err := prompt.Run()
+// func cliInputs() string  {
+// 	prompt := promptui.Prompt{
+// 		Label:    "Project Name",
+// 	}
 
-	if err != nil {
-		fmt.Printf("Prompt failed %v\n", err)
-		os.Exit(1)
-	}
+// 	result, err := prompt.Run()
 
-	return result
-}
+// 	if err != nil {
+// 		fmt.Printf("Prompt failed %v\n", err)
+// 		os.Exit(1)
+// 	}
+
+// 	return result
+// }
 
 // 	this part is for the system command
 
@@ -52,10 +54,15 @@ func promptUI()  {
 		return
 	}
 	
-	if result == "React-Typescript" {
+	switch (result) {
+	case "React-Typescript":
 		ReactTypescript()
+	case "ReactNative-Expo-Typescript":
+		// some function
+	case "Firebase Functions":
+		FirebaseFunctions()
 	}
-	
+
 }
 
 var cfgFile string
