@@ -1,9 +1,9 @@
 {
-  "name": "zeus",
+  "name": "zenius",
   "version": "1.0.0",
   "description": "A Cli for Setup Projects for React web and mobile native ",
-  "main": "main.go",
-  "bin": "pcli",
+  "main": "./main.go",
+  "bin": "./pcli",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
