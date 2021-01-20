@@ -43,7 +43,7 @@ func promptUI()  {
 
 	prompt := promptui.Select{
 		Label: "Select A Project setup",
-		Items: []string{"React-Typescript", "ReactNative-Expo-Typescript", "Firebase Functions"},
+		Items: []string{"Nextjs", "React-Typescript", "ReactNative-Expo-Typescript", "Firebase Functions"},
 		Templates: cellTemplate,	
 	}
 
@@ -57,6 +57,8 @@ func promptUI()  {
 	switch (result) {
 	case "React-Typescript":
 		ReactTypescript()
+	case "Nextjs":
+		Nextjs()
 	case "ReactNative-Expo-Typescript":
 		// implement function later
 	case "Firebase Functions":
