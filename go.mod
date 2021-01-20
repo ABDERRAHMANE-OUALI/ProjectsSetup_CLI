@@ -3,7 +3,6 @@ module pcli
 go 1.15
 
 require (
-
 	github.com/fatih/color v1.10.0
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
 

@@ -1,0 +1,10 @@
+!GlobalState
+assets:
+  build-packages:
+  - golang-src=2:1.13~1ubuntu2
+  - golang-race-detector-runtime=2:1.13~1ubuntu2
+  - golang-1.13-race-detector-runtime=0.0+svn332029-0ubuntu2
+  - golang-1.13-go=1.13.8-1ubuntu1
+  - golang-1.13-src=1.13.8-1ubuntu1
+  - golang-go=2:1.13~1ubuntu2
+  build-snaps: []

@@ -1,0 +1,14 @@
+name: zenius
+summary: A Cli for Setup Projects for React web and mobile native 
+description: |
+  A Cli for Setup Projects for React web and mobile native 
+version: '1.0'
+
+apps:
+  Build:
+    command: go build
+
+parts:
+  build:
+    plugin: go
+    source: .
