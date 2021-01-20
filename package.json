@@ -1,9 +1,9 @@
 {
-  "name": "zenius",
-  "version": "1.0.0",
+  "name": "zeus",
+  "version": "1.0.3",
   "description": "A Cli for Setup Projects for React web and mobile native ",
-  "main": "./main.go",
-  "bin": "./pcli",
+  "main": "main.go",
+  "bin": "pcli",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -17,5 +17,6 @@
   "bugs": {
     "url": "https://github.com/ANDRUXUIS/ProjectsSetup_CLI/issues"
   },
-  "homepage": "https://github.com/ANDRUXUIS/ProjectsSetup_CLI"
+  "homepage": "https://github.com/ANDRUXUIS/ProjectsSetup_CLI",
+  "dependencies": {}
 }

@@ -7,7 +7,9 @@ version: '1.0'
 apps:
   Build:
     command: go build
+
 parts:
   build:
     plugin: go
     source: .
+    go-importpath: .

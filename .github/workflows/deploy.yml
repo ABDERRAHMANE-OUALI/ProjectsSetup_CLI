@@ -10,21 +10,21 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Loading Code
-        uses: actions/checkout@v2
+        uses: actions/checkout@master
 
       - name: Set up Go
         uses: actions/setup-go@v2
-        with:
-          go-version: 1.15
+          with:
+            go-version: '^1.15.6' # The Go version to download (if necessary) and use.
 
       - name: Build Go Programme
         run: go build
+
       - name: setup node
         uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: installing dependencies   
-        run: npm i
+
       - name: Publishing to node  
         uses: JS-DevTools/npm-publish@v1
         with:
