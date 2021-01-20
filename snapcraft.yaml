@@ -3,13 +3,15 @@ summary: A Cli for Setup Projects for React web and mobile native
 description: |
   A Cli for Setup Projects for React web and mobile native 
 version: '1.0'
+base: core20
 
 apps:
   Build:
     command: go build
 
 parts:
-  build:
+  zenius:
     plugin: go
     source: .
-    go-importpath: .
+    source-type: git
+    # go-importpath: github.com/ANDRUXUIS/ProjectsSetup_CLI

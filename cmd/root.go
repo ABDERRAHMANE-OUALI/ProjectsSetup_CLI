@@ -58,7 +58,7 @@ func promptUI()  {
 	case "React-Typescript":
 		ReactTypescript()
 	case "ReactNative-Expo-Typescript":
-		// some function
+		// implement function later
 	case "Firebase Functions":
 		FirebaseFunctions()
 	}
