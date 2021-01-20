@@ -1,6 +1,6 @@
 {
   "name": "zenius",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A Cli for Setup Projects for React web and mobile native ",
   "main": "main.go",
   "bin": "pcli",

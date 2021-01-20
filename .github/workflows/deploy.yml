@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: 12
 
-      - name: Publishing to node  
+      - name: Publishing to npm  
         uses: JS-DevTools/npm-publish@v1
         with:
           token: ${{ secrets.NPM_TOKEN }}
