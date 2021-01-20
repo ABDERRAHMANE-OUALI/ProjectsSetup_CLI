@@ -1,3 +1,3 @@
 git add .
-git commit -m "adding firebase to the cli interface options"
+git commit -m "Publishing to npm registery"
 git push origin master -f
