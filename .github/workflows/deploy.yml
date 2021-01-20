@@ -19,10 +19,6 @@ jobs:
 
       - name: Build Go Programme
         run: go build
-  publish:
-    runs-on: ubuntu-latest
-    needs: build
-    steps:
       - name: setup node
         uses: actions/setup-node@v1
         with:
