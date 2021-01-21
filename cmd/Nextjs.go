@@ -1,21 +1,21 @@
 package cmd
 
 import (
-	"fmt"
+	"log"
+	"os"
 	"os/exec"
 )
 
 // Nextjs function
 func Nextjs()  {
-	out, err := exec.Command("/bin/sh", "-c", "yarn create next-app . && touch tsconfig.json && yarn add --dev typescript @types/react @types/node").Output()
-	
+	cmd := exec.Command("/bin/sh", "-c", "yarn create next-app . && touch tsconfig.json && yarn add --dev typescript @types/react @types/node && yarn add sass")
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	err := cmd.Run()
+
 	if err != nil {
-		// colorize the output string
-		fmt.Println(string("\033[31m"), "Operation failed %v\n", err, string("\033[0m"))
+		log.Fatal(err)
 		return
 	}
 	
-	output := string(out[:])
-    fmt.Println(output)
-
 }

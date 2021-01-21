@@ -18,5 +18,7 @@
     "url": "https://github.com/ANDRUXUIS/ProjectsSetup_CLI/issues"
   },
   "homepage": "https://github.com/ANDRUXUIS/ProjectsSetup_CLI",
-  "dependencies": {}
+  "dependencies": {
+    "bootstrap": "^4.6.0"
+  }
 }
