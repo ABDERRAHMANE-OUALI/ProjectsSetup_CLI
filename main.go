@@ -1,6 +1,8 @@
 package main
 
-import "pcli/cmd"
+import (
+	"pcli/cmd"
+)
 
 func main() {
 	cmd.Execute()

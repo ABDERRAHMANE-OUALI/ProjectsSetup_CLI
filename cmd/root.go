@@ -2,7 +2,9 @@ package cmd
 
 import (
 	"fmt"
+	"log"
 	"os"
+	"os/exec"
 
 	"github.com/manifoldco/promptui"
 	"github.com/spf13/cobra"
@@ -12,6 +14,19 @@ import (
 
 	"github.com/fatih/color"
 )
+
+// SystemCommand Global Functions
+func SystemCommand(command string)  {
+	cmd := exec.Command("/bin/sh", "-c", command)
+	cmd.Stdout = os.Stdout
+	cmd.Stderr = os.Stderr
+	err := cmd.Run()
+	if err != nil {
+		log.Fatal(err)
+		return
+	}
+
+}
 
 // Function for get inputs from terminal
 

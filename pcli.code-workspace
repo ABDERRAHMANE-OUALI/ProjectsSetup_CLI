@@ -11,6 +11,9 @@
       "editor.formatOnSave": true,
 	  },
     "go.formatTool": "goimports",
-    "go.autocompleteUnimportedPackages": true
+    "go.autocompleteUnimportedPackages": true,
   },
+  "extensions": {
+    "recommendations": ["golang.go", "eamodio.gitlens", "PKief.material-icon-theme"],
+  }
 }
