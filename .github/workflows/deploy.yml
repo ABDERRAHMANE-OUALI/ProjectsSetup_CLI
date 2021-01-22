@@ -1,31 +1,31 @@
-# name: Build cli and Deploy to npm
+name: Build cli and Deploy to npm
 
-# on:
-#   push:
-#     branches: [ master ]
+on:
+  push:
+    branches: [ master ]
 
 
-# jobs:
-#   build:
-#     runs-on: ubuntu-latest
-#     steps:
-#       - name: Loading Code
-#         uses: actions/checkout@master
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Loading Code
+        uses: actions/checkout@master
 
-#       - name: Set up Go
-#         uses: actions/setup-go@v2
-#         with:
-#           go-version: '^1.15.6' # The Go version to download (if necessary) and use.
+      - name: Set up Go
+        uses: actions/setup-go@v2
+        with:
+          go-version: '^1.15.6' # The Go version to download (if necessary) and use.
 
-#       - name: Build Go Programme
-#         run: go build
+      - name: Build Go Programme
+        run: go build
 
-#       - name: setup node
-#         uses: actions/setup-node@v1
-#         with:
-#           node-version: 12
+      - name: setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
 
-#       - name: Publishing to npm  
-#         uses: JS-DevTools/npm-publish@v1
-#         with:
-#           token: ${{ secrets.NPM_TOKEN }}
+      - name: Publishing to npm  
+        uses: JS-DevTools/npm-publish@v1
+        with:
+          token: ${{ secrets.NPM_TOKEN }}
